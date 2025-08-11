@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Filmes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Catálogo de Filmes 🎬</h1>
+    <div id="totais-gerais"></div>
+    <div id="filmes-container"></div>
+
+    <hr style="margin: 40px 0; border-color: #444;" />
+
+    <h2 style="text-align: center;">Cadastro de Novo Filme</h2>
+    <form id="form-cadastro" style="max-width: 600px; margin: auto;">
+        <label>
+            Título*:<br />
+            <input type="text" id="input-titulo" required />
+        </label><br /><br />
+
+        <label>
+            Gênero*:<br />
+            <input type="text" id="input-genero" required placeholder="Ex: Ação, Drama" />
+        </label><br /><br />
+
+        <label>
+            URL da Imagem*:<br />
+            <input type="url" id="input-imagem" required placeholder="https://..." />
+        </label><br /><br />
+
+        <label>
+            Descrição:<br />
+            <textarea id="input-descricao" rows="4" placeholder="Opcional"></textarea>
+        </label><br /><br />
+
+        <button type="submit">Cadastrar Filme</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
